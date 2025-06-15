@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "wypizdowo",
+	"version": "${version}",
+	"name": "Wypizdowo",
+	"description": "Mod o wszystkim co mi przyszło do głowy",
+	"authors": [
+		"Qwinstii"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/wypizdowo/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"pl.qwinstii.wypizdowo.Wypizdowo"
+		],
+		"fabric-datagen": [
+			"pl.qwinstii.wypizdowo.WypizdowoDataGenerator"
+		],
+		"client": [
+			"pl.qwinstii.wypizdowo.WypizdowoClient"
+		]
+	},
+	"mixins": [
+		"wypizdowo.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
